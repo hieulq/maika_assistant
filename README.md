@@ -17,14 +17,19 @@
 |       |-- etc...
 ```
 
-- Restart Home Assistant để cập nhật component maika_assistant
-- Mở app Maika chọn tính năng smart home và thực hiện account linking: `Quản lý tài khoản liên kết` -> `Kết Nối Tài Khoản Mới`-> trong mục `Chọn nhà cung cấp`, chọn `Home Assistant`
+- Kiểm tra phiên bản Hass hiện tại và kiểm tra version maika_assistant hiện tại.
 
   <img src="images/IMG-0928.PNG" height="800em" />
 
+- Chọn version gần bằng nhau nhất. VD version Hass hiện tại của bạn là 2022.8.2 và version maika_assistant là 2022.8.0 hãy dùng phiên bản maika_assistant mới nhất là 2022.8.0 bằng cách dùng lệnh `git checkout 2022.8.0` trong thư mục git maika_assistant.
+- Restart Home Assistant để cập nhật component maika_assistant
+- Mở app Maika chọn tính năng smart home và thực hiện account linking: `Quản lý tài khoản liên kết` -> `Kết Nối Tài Khoản Mới`-> trong mục `Chọn nhà cung cấp`, chọn `Home Assistant`
+
+  <img src="images/version supported.png" height="400em" />
+
 - Trước khi bấm nút `Next` vui lòng copy `Key` như hình trên và chép vào `api_key` trong file `configuration.yaml` của Home Assistant như config bên dưới, sau đó restart Home Assistant để cập nhật config
+- url: có thể là localhost hoặc ip: http://localhost:8123 (hãy thử với trường hợp này trước), http://192.168.1.99:8123, https://192.168.1.99:8123.
 - \*\*\* Lưu ý sau khi bấm `Next` nếu ở màn hình login xuất hiện lỗi `400 bad request` hãy thêm config `http ` như bên dưới, thực hiện lại bước `liên kết tài khoản` và lấy key mới nhất.
-- url: hãy chép đường dẫn mà server của bạn đang hoạt động ở môi trường mạng nội bộ , có thể là localhost hoặc ip: http://localhost:8123 (hãy thử với trường hợp này trước), http://192.168.1.99:8123, https://192.168.1.99:8123.
 
 ### Cấu hình No SSL (HTTP)
 
