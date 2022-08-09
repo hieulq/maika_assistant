@@ -19,13 +19,13 @@
 
 - Kiểm tra phiên bản Hass hiện tại và kiểm tra version maika_assistant hiện tại.
 
-  <img src="images/IMG-0928.PNG" height="800em" />
+  <img src="images/version supported.png" height="400em" />
 
 - Chọn version gần bằng nhau nhất. VD version Hass hiện tại của bạn là 2022.8.2 và version maika_assistant là 2022.8.0 hãy dùng phiên bản maika_assistant mới nhất là 2022.8.0 bằng cách dùng lệnh `git checkout 2022.8.0` trong thư mục git maika_assistant.
 - Restart Home Assistant để cập nhật component maika_assistant
 - Mở app Maika chọn tính năng smart home và thực hiện account linking: `Quản lý tài khoản liên kết` -> `Kết Nối Tài Khoản Mới`-> trong mục `Chọn nhà cung cấp`, chọn `Home Assistant`
 
-  <img src="images/version supported.png" height="400em" />
+  <img src="images/IMG-0928.PNG" height="800em" />
 
 - Trước khi bấm nút `Next` vui lòng copy `Key` như hình trên và chép vào `api_key` trong file `configuration.yaml` của Home Assistant như config bên dưới, sau đó restart Home Assistant để cập nhật config
 - url: có thể là localhost hoặc ip: http://localhost:8123 (hãy thử với trường hợp này trước), http://192.168.1.99:8123, https://192.168.1.99:8123.
