@@ -1,7 +1,7 @@
 {
   "domain": "maika_assistant",
   "name": "Maika Assistant",
-  "version": "1.0.1",
+  "version": "2022.9.7",
   "documentation": "https://github.com/olli-ai/maika_assistant",
   "dependencies": ["http"],
   "requirements": ["websockets", "aiohttp"],
